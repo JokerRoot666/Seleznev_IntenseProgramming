@@ -122,6 +122,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Сотрудники.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="621a8765-1d9a-4d6a-89e0-2172bbb18925">
     <name>Фамилия</name>
     <synonym>
@@ -200,4 +201,75 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <tabularSections uuid="5bf6548f-ea90-473b-af31-793bbfbbe7e1">
+    <producedTypes>
+      <objectType typeId="0cd9b0b3-2115-4215-acdc-292b0dc194ef" valueTypeId="c24dcd19-2915-4446-9894-3cf4d388a241"/>
+      <rowType typeId="5193a744-b47d-4f42-b810-ce83a08ac2fa" valueTypeId="be08bf05-bc99-49a6-b848-662de0b7d248"/>
+    </producedTypes>
+    <name>Образование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образование</value>
+    </synonym>
+    <attributes uuid="ad234e80-dc69-405c-a250-10ba23b5d595">
+      <name>Специальность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Специальность</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eb52b993-6868-49f1-b280-875512fbbae7">
+      <name>ДатаНачалаОбучения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала обучения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2603f07c-e7b4-4e37-a841-5d3b52885315">
+      <name>ДатаОкончанияОбучения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания обучения</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="546cf440-2d0e-47dd-8a31-74c6637d863f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

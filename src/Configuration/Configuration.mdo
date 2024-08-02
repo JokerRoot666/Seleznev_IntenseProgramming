@@ -35,6 +35,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <definedTypes>DefinedType.ДенежныеСредства</definedTypes>
   <constants>Constant.ГенеральныйДиректор</constants>
   <constants>Constant.ИНН_Организации</constants>
   <constants>Constant.НазваниеОрганизации</constants>
@@ -43,6 +44,7 @@
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
+  <documents>Document.ЗаказПоставщику</documents>
   <enums>Enum.ВидНоменклатуры</enums>
   <enums>Enum.ПроисхождениеНоменклатуры</enums>
 </mdclass:Configuration>

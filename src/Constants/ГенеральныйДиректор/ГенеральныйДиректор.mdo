@@ -11,10 +11,7 @@
     <value>Генеральный директор</value>
   </synonym>
   <type>
-    <types>String</types>
-    <stringQualifiers>
-      <length>10</length>
-    </stringQualifiers>
+    <types>CatalogRef.Сотрудники</types>
   </type>
   <useStandardCommands>true</useStandardCommands>
   <minValue xsi:type="core:UndefinedValue"/>

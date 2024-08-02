@@ -200,27 +200,26 @@
       <wrap>true</wrap>
       <extendedEditMultipleValues>true</extendedEditMultipleValues>
       <listChoiceMode>true</listChoiceMode>
-      <chooseType>true</chooseType>
       <typeDomainEnabled>true</typeDomainEnabled>
       <textEdit>true</textEdit>
       <choiceList>
         <value xsi:type="core:ReferenceValue">
-          <value>7a30c098-c582-4c74-8eee-24e04215db69.bebf3fe6-7b00-475a-9249-4ac6461f264a</value>
+          <value>Enum.ВидНоменклатуры.EnumValue.Услуга</value>
         </value>
       </choiceList>
       <choiceList>
         <value xsi:type="core:ReferenceValue">
-          <value>7a30c098-c582-4c74-8eee-24e04215db69.a3283fdf-3de6-47f4-b201-3e63aa21040a</value>
+          <value>Enum.ВидНоменклатуры.EnumValue.Товар</value>
         </value>
       </choiceList>
       <choiceList>
         <value xsi:type="core:ReferenceValue">
-          <value>7a30c098-c582-4c74-8eee-24e04215db69.2931c93c-30f7-47bd-9b5b-96ce2735bbea</value>
+          <value>Enum.ВидНоменклатуры.EnumValue.Материал</value>
         </value>
       </choiceList>
       <choiceList>
         <value xsi:type="core:ReferenceValue">
-          <value>7a30c098-c582-4c74-8eee-24e04215db69.f661114b-0f40-4376-a1a8-2233e259df69</value>
+          <value>Enum.ВидНоменклатуры.EnumValue.РасходныйМатериал</value>
         </value>
       </choiceList>
     </extInfo>

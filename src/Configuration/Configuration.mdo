@@ -12,6 +12,7 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.Администрирование</defaultRoles>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -40,7 +41,6 @@
   <subsystems>Subsystem.ПроизводственныйУчет</subsystems>
   <subsystems>Subsystem.ТорговыйУчет</subsystems>
   <roles>Role.Администрирование</roles>
-  <roles>Role.Пользователь</roles>
   <definedTypes>DefinedType.ДенежныеСредства</definedTypes>
   <commandGroups>CommandGroup.ТорговыеОперации</commandGroups>
   <commandGroups>CommandGroup.ПроизводственныеОперации</commandGroups>

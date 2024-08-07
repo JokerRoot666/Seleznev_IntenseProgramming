@@ -4,38 +4,6 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Subsystem.ПроизводственныйУчет</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.ТорговыйУчет</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.НСИ</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.ОтчетПоПродажам</name>
-		<right>
-			<name>Use</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Constant.ГенеральныйДиректор</name>
 		<right>
 			<name>Read</name>
@@ -79,13 +47,6 @@
 		</right>
 		<right>
 			<name>SwitchToDataHistoryVersion</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.КадровыйУчет</name>
-		<right>
-			<name>View</name>
 			<value>false</value>
 		</right>
 	</object>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2073c13f-af4a-4daf-81a7-a5d70cbd87f5">
+  <name>ТорговыйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Торговый учет</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ЗаказПоставщику</content>
+  <content>Document.ПриходнаяНакладная</content>
+  <content>Catalog.Договоры</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.Номенклатура</content>
+  <content>Document.РасходнаяНакладная</content>
+  <content>Report.ОтчетПоПродажам</content>
+</mdclass:Subsystem>

@@ -35,7 +35,17 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.КадровыйУчет</subsystems>
+  <subsystems>Subsystem.НСИ</subsystems>
+  <subsystems>Subsystem.ПроизводственныйУчет</subsystems>
+  <subsystems>Subsystem.ТорговыйУчет</subsystems>
+  <roles>Role.Администрирование</roles>
+  <roles>Role.Пользователь</roles>
   <definedTypes>DefinedType.ДенежныеСредства</definedTypes>
+  <commandGroups>CommandGroup.ТорговыеОперации</commandGroups>
+  <commandGroups>CommandGroup.ПроизводственныеОперации</commandGroups>
+  <commandGroups>CommandGroup.УчетныеДанные</commandGroups>
+  <commandGroups>CommandGroup.ТорговыйУчет</commandGroups>
   <constants>Constant.ГенеральныйДиректор</constants>
   <constants>Constant.ИНН_Организации</constants>
   <constants>Constant.НазваниеОрганизации</constants>
@@ -45,6 +55,11 @@
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <documents>Document.ЗаказПоставщику</documents>
+  <documents>Document.ПриходнаяНакладная</documents>
+  <documents>Document.ПроизводствоПродукции</documents>
+  <documents>Document.РасходнаяНакладная</documents>
   <enums>Enum.ВидНоменклатуры</enums>
   <enums>Enum.ПроисхождениеНоменклатуры</enums>
+  <reports>Report.ОтчетПоПродажам</reports>
+  <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="148e1a4d-0ee6-4629-b0ba-0aa824ab3b5c">
+  <name>ПроизводственныйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производственный учет</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ПроизводствоПродукции</content>
+</mdclass:Subsystem>

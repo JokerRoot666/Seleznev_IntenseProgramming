@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58febec0-4f36-4861-9cf7-1d70be4e5664">
+  <producedTypes>
+    <objectType typeId="b1b304a7-f9f9-4119-8fbf-f21dc6cb8416" valueTypeId="c721c8f5-f01d-4e35-97a1-4e82a7e4a0c9"/>
+    <managerType typeId="66216e6e-0aba-46a6-8490-53b64efa24e7" valueTypeId="0b8eb9b2-54f5-40aa-98e5-2f3713efc3df"/>
+  </producedTypes>
+  <name>Домашки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Домашки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Домашки.Form.Форма</defaultForm>
+  <forms uuid="ed202d53-ff1a-4045-8edc-33e77283c341">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

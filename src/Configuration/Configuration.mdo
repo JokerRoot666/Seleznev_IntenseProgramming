@@ -40,16 +40,21 @@
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.ПроизводственныйУчет</subsystems>
   <subsystems>Subsystem.ТорговыйУчет</subsystems>
+  <subsystems>Subsystem.УглубленныйБлок2</subsystems>
   <roles>Role.Администрирование</roles>
+  <commonModules>CommonModule.РаботаСКонстантамиВызовСервера</commonModules>
   <definedTypes>DefinedType.ДенежныеСредства</definedTypes>
   <commandGroups>CommandGroup.ТорговыеОперации</commandGroups>
   <commandGroups>CommandGroup.ПроизводственныеОперации</commandGroups>
   <commandGroups>CommandGroup.УчетныеДанные</commandGroups>
   <commandGroups>CommandGroup.ТорговыйУчет</commandGroups>
+  <commandGroups>CommandGroup.ПериодическиеДанные</commandGroups>
+  <commandGroups>CommandGroup.Характеристики</commandGroups>
   <constants>Constant.ГенеральныйДиректор</constants>
   <constants>Constant.ИНН_Организации</constants>
   <constants>Constant.НазваниеОрганизации</constants>
   <commonForms>CommonForm.ДанныеОрганизации</commonForms>
+  <catalogs>Catalog.ВариантыЗначенияХарактеристик</catalogs>
   <catalogs>Catalog.Договоры</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
@@ -61,5 +66,9 @@
   <enums>Enum.ВидНоменклатуры</enums>
   <enums>Enum.ПроисхождениеНоменклатуры</enums>
   <reports>Report.ОтчетПоПродажам</reports>
+  <dataProcessors>DataProcessor.Домашки</dataProcessors>
+  <informationRegisters>InformationRegister.ХарактеристикиНоменклатуры</informationRegisters>
+  <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВидыХарактеристик</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

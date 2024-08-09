@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
     <name>Номер</name>
     <id>1</id>
@@ -200,15 +200,65 @@
       <textEdit>true</textEdit>
     </extInfo>
   </items>
+  <items xsi:type="form:FormField">
+    <name>ИтоговаяСумма</name>
+    <id>13</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ИтоговаяСумма</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>ИтоговаяСуммаРасширеннаяПодсказка</name>
+      <id>15</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ИтоговаяСуммаКонтекстноеМеню</name>
+      <id>14</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
   <items xsi:type="form:FormGroup">
     <name>Страницы</name>
-    <id>13</id>
+    <id>16</id>
     <items xsi:type="form:FormGroup">
       <name>ГруппаТовары</name>
-      <id>15</id>
+      <id>18</id>
       <items xsi:type="form:Table">
         <name>Товары</name>
-        <id>87</id>
+        <id>20</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -220,7 +270,7 @@
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
           <name>ТоварыНомерСтроки</name>
-          <id>100</id>
+          <id>33</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -231,7 +281,7 @@
           </dataPath>
           <extendedTooltip>
             <name>ТоварыНомерСтрокиРасширеннаяПодсказка</name>
-            <id>102</id>
+            <id>35</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -246,7 +296,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыНомерСтрокиКонтекстноеМеню</name>
-            <id>101</id>
+            <id>34</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -254,23 +304,19 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>InputField</type>
-          <editMode>Enter</editMode>
+          <type>LabelField</type>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
+          <extInfo xsi:type="form:LabelFieldExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
           <name>ТоварыТовар</name>
-          <id>103</id>
+          <id>36</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -279,9 +325,13 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Товары.Товар</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ТоварыТоварПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ТоварыТоварРасширеннаяПодсказка</name>
-            <id>105</id>
+            <id>38</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -296,7 +346,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыТоварКонтекстноеМеню</name>
-            <id>104</id>
+            <id>37</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -305,7 +355,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>Enter</editMode>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -320,7 +370,7 @@
         </items>
         <items xsi:type="form:FormField">
           <name>ТоварыКоличество</name>
-          <id>106</id>
+          <id>39</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -335,7 +385,7 @@
           </handlers>
           <extendedTooltip>
             <name>ТоварыКоличествоРасширеннаяПодсказка</name>
-            <id>108</id>
+            <id>41</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -350,7 +400,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыКоличествоКонтекстноеМеню</name>
-            <id>107</id>
+            <id>40</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -359,7 +409,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>Enter</editMode>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -374,7 +424,7 @@
         </items>
         <items xsi:type="form:FormField">
           <name>ТоварыЦена</name>
-          <id>109</id>
+          <id>42</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -383,13 +433,9 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Товары.Цена</segments>
           </dataPath>
-          <handlers>
-            <event>OnChange</event>
-            <name>ТоварыЦенаПриИзменении</name>
-          </handlers>
           <extendedTooltip>
             <name>ТоварыЦенаРасширеннаяПодсказка</name>
-            <id>111</id>
+            <id>44</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -404,7 +450,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыЦенаКонтекстноеМеню</name>
-            <id>110</id>
+            <id>43</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -413,7 +459,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>Enter</editMode>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -428,7 +474,7 @@
         </items>
         <items xsi:type="form:FormField">
           <name>ТоварыПроцентСкидки</name>
-          <id>112</id>
+          <id>45</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -437,13 +483,9 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Товары.ПроцентСкидки</segments>
           </dataPath>
-          <handlers>
-            <event>OnChange</event>
-            <name>ТоварыСкидкаПриИзменении</name>
-          </handlers>
           <extendedTooltip>
             <name>ТоварыПроцентСкидкиРасширеннаяПодсказка</name>
-            <id>114</id>
+            <id>47</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -458,7 +500,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыПроцентСкидкиКонтекстноеМеню</name>
-            <id>113</id>
+            <id>46</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -467,7 +509,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>Enter</editMode>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -482,7 +524,7 @@
         </items>
         <items xsi:type="form:FormField">
           <name>ТоварыСумма</name>
-          <id>115</id>
+          <id>48</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -493,7 +535,7 @@
           </dataPath>
           <extendedTooltip>
             <name>ТоварыСуммаРасширеннаяПодсказка</name>
-            <id>117</id>
+            <id>50</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -508,7 +550,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыСуммаКонтекстноеМеню</name>
-            <id>116</id>
+            <id>49</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -517,7 +559,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>Enter</editMode>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -532,7 +574,7 @@
         </items>
         <autoCommandBar>
           <name>ТоварыКоманднаяПанель</name>
-          <id>88</id>
+          <id>22</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -548,10 +590,10 @@
             <common>true</common>
           </userVisible>
           <name>ТоварыСтрокаПоиска</name>
-          <id>91</id>
+          <id>24</id>
           <extendedTooltip>
             <name>ТоварыСтрокаПоискаРасширеннаяПодсказка</name>
-            <id>93</id>
+            <id>26</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -566,7 +608,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыСтрокаПоискаКонтекстноеМеню</name>
-            <id>92</id>
+            <id>25</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -586,10 +628,10 @@
             <common>true</common>
           </userVisible>
           <name>ТоварыСостояниеПросмотра</name>
-          <id>97</id>
+          <id>27</id>
           <extendedTooltip>
             <name>ТоварыСостояниеПросмотраРасширеннаяПодсказка</name>
-            <id>99</id>
+            <id>29</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -604,7 +646,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыСостояниеПросмотраКонтекстноеМеню</name>
-            <id>98</id>
+            <id>28</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -625,10 +667,10 @@
             <common>true</common>
           </userVisible>
           <name>ТоварыУправлениеПоиском</name>
-          <id>94</id>
+          <id>30</id>
           <extendedTooltip>
             <name>ТоварыУправлениеПоискомРасширеннаяПодсказка</name>
-            <id>96</id>
+            <id>32</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -643,7 +685,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>ТоварыУправлениеПоискомКонтекстноеМеню</name>
-            <id>95</id>
+            <id>31</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -659,7 +701,7 @@
         </searchControlAddition>
         <extendedTooltip>
           <name>ТоварыРасширеннаяПодсказка</name>
-          <id>90</id>
+          <id>23</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -674,7 +716,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>ТоварыКонтекстноеМеню</name>
-          <id>89</id>
+          <id>21</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -695,12 +737,14 @@
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
+        <autoInsertNewRow>true</autoInsertNewRow>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
+        <enableStartDrag>true</enableStartDrag>
+        <enableDrag>true</enableDrag>
         <fileDragMode>AsFileRef</fileDragMode>
-        <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -713,7 +757,7 @@
       </title>
       <extendedTooltip>
         <name>ГруппаТоварыРасширеннаяПодсказка</name>
-        <id>16</id>
+        <id>19</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -734,10 +778,10 @@
     </items>
     <items xsi:type="form:FormGroup">
       <name>ГруппаУслуги</name>
-      <id>45</id>
+      <id>51</id>
       <items xsi:type="form:Table">
         <name>Услуги</name>
-        <id>118</id>
+        <id>53</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -749,7 +793,7 @@
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
           <name>УслугиНомерСтроки</name>
-          <id>131</id>
+          <id>66</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -760,7 +804,7 @@
           </dataPath>
           <extendedTooltip>
             <name>УслугиНомерСтрокиРасширеннаяПодсказка</name>
-            <id>133</id>
+            <id>68</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -775,7 +819,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>УслугиНомерСтрокиКонтекстноеМеню</name>
-            <id>132</id>
+            <id>67</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -783,23 +827,19 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>InputField</type>
-          <editMode>Enter</editMode>
+          <type>LabelField</type>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
+          <extInfo xsi:type="form:LabelFieldExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
           <name>УслугиУслуга</name>
-          <id>134</id>
+          <id>69</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -808,9 +848,13 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Услуги.Услуга</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>УслугиУслугаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>УслугиУслугаРасширеннаяПодсказка</name>
-            <id>136</id>
+            <id>71</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -825,7 +869,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>УслугиУслугаКонтекстноеМеню</name>
-            <id>135</id>
+            <id>70</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -834,7 +878,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>Enter</editMode>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -849,7 +893,7 @@
         </items>
         <items xsi:type="form:FormField">
           <name>УслугиСумма</name>
-          <id>137</id>
+          <id>72</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -860,7 +904,7 @@
           </dataPath>
           <extendedTooltip>
             <name>УслугиСуммаРасширеннаяПодсказка</name>
-            <id>139</id>
+            <id>74</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -875,7 +919,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>УслугиСуммаКонтекстноеМеню</name>
-            <id>138</id>
+            <id>73</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -884,7 +928,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>Enter</editMode>
+          <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -899,7 +943,7 @@
         </items>
         <autoCommandBar>
           <name>УслугиКоманднаяПанель</name>
-          <id>119</id>
+          <id>55</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -915,10 +959,10 @@
             <common>true</common>
           </userVisible>
           <name>УслугиСтрокаПоиска</name>
-          <id>122</id>
+          <id>57</id>
           <extendedTooltip>
             <name>УслугиСтрокаПоискаРасширеннаяПодсказка</name>
-            <id>124</id>
+            <id>59</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -933,7 +977,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>УслугиСтрокаПоискаКонтекстноеМеню</name>
-            <id>123</id>
+            <id>58</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -953,10 +997,10 @@
             <common>true</common>
           </userVisible>
           <name>УслугиСостояниеПросмотра</name>
-          <id>128</id>
+          <id>60</id>
           <extendedTooltip>
             <name>УслугиСостояниеПросмотраРасширеннаяПодсказка</name>
-            <id>130</id>
+            <id>62</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -971,7 +1015,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>УслугиСостояниеПросмотраКонтекстноеМеню</name>
-            <id>129</id>
+            <id>61</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -992,10 +1036,10 @@
             <common>true</common>
           </userVisible>
           <name>УслугиУправлениеПоиском</name>
-          <id>125</id>
+          <id>63</id>
           <extendedTooltip>
             <name>УслугиУправлениеПоискомРасширеннаяПодсказка</name>
-            <id>127</id>
+            <id>65</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1010,7 +1054,7 @@
           </extendedTooltip>
           <contextMenu>
             <name>УслугиУправлениеПоискомКонтекстноеМеню</name>
-            <id>126</id>
+            <id>64</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1026,7 +1070,7 @@
         </searchControlAddition>
         <extendedTooltip>
           <name>УслугиРасширеннаяПодсказка</name>
-          <id>121</id>
+          <id>56</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1041,7 +1085,7 @@
         </extendedTooltip>
         <contextMenu>
           <name>УслугиКонтекстноеМеню</name>
-          <id>120</id>
+          <id>54</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1062,12 +1106,14 @@
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
+        <autoInsertNewRow>true</autoInsertNewRow>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
+        <enableStartDrag>true</enableStartDrag>
+        <enableDrag>true</enableDrag>
         <fileDragMode>AsFileRef</fileDragMode>
-        <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -1080,7 +1126,7 @@
       </title>
       <extendedTooltip>
         <name>ГруппаУслугиРасширеннаяПодсказка</name>
-        <id>46</id>
+        <id>52</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -1110,7 +1156,7 @@
     </title>
     <extendedTooltip>
       <name>СтраницыРасширеннаяПодсказка</name>
-      <id>14</id>
+      <id>17</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -1165,7 +1211,6 @@
       <segments>Объект.RegisterRecords</segments>
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
-    <savedData>true</savedData>
   </attributes>
   <commandInterface>
     <navigationPanel/>

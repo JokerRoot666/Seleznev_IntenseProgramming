@@ -13,14 +13,18 @@
       <commands>Document.ПриходнаяНакладная.StandardCommand.OpenList</commands>
       <commands>Document.РасходнаяНакладная.StandardCommand.OpenList</commands>
     </placementFragments>
+    <placementFragments>
+      <group>CommandGroup.ПериодическиеДанные</group>
+      <commands>InformationRegister.ЦеныНоменклатуры.StandardCommand.OpenList</commands>
+    </placementFragments>
+    <placementFragments>
+      <group>CommandGroup.Характеристики</group>
+      <commands>ChartOfCharacteristicTypes.ВидыХарактеристик.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.ХарактеристикиНоменклатуры.StandardCommand.OpenList</commands>
+      <commands>Catalog.ВариантыЗначенияХарактеристик.StandardCommand.OpenList</commands>
+    </placementFragments>
   </commandsPlacement>
   <commandsOrder>
-    <orderFragments>
-      <group>CommandGroup.УчетныеДанные</group>
-      <commands>Catalog.Договоры.StandardCommand.OpenList</commands>
-      <commands>Catalog.Контрагенты.StandardCommand.OpenList</commands>
-      <commands>Catalog.Номенклатура.StandardCommand.OpenList</commands>
-    </orderFragments>
     <orderFragments>
       <group>CommandGroup.ТорговыеОперации</group>
       <commands>Document.РасходнаяНакладная.StandardCommand.OpenList</commands>

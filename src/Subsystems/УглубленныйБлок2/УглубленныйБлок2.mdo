@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3c8f63f-2112-4f81-a918-dd7279970228">
+  <name>УглубленныйБлок2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Углубленный блок -ДЗ 2</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <useOneCommand>true</useOneCommand>
+  <content>DataProcessor.Домашки</content>
+</mdclass:Subsystem>

@@ -154,34 +154,34 @@
     <name>Страницы</name>
     <id>13</id>
     <items xsi:type="form:FormGroup">
-      <name>СписокМатериалов</name>
+      <name>СписокРасходников</name>
       <id>15</id>
       <items xsi:type="form:Table">
-        <name>Материалы</name>
-        <id>17</id>
+        <name>РасходныеМатериалы</name>
+        <id>137</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Материалы</segments>
+          <segments>Объект.РасходныеМатериалы</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
-          <name>МатериалыНомерСтроки</name>
-          <id>30</id>
+          <name>РасходныеМатериалыНомерСтроки</name>
+          <id>150</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.Материалы.LineNumber</segments>
+            <segments>Объект.РасходныеМатериалы.LineNumber</segments>
           </dataPath>
           <extendedTooltip>
-            <name>МатериалыНомерСтрокиРасширеннаяПодсказка</name>
-            <id>32</id>
+            <name>РасходныеМатериалыНомерСтрокиРасширеннаяПодсказка</name>
+            <id>152</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -195,54 +195,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>МатериалыНомерСтрокиКонтекстноеМеню</name>
-            <id>31</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
-          <name>МатериалыМатериал</name>
-          <id>33</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.Материалы.Материал</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>МатериалыМатериалРасширеннаяПодсказка</name>
-            <id>35</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>МатериалыМатериалКонтекстноеМеню</name>
-            <id>34</id>
+            <name>РасходныеМатериалыНомерСтрокиКонтекстноеМеню</name>
+            <id>151</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -251,7 +205,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -265,23 +219,19 @@
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
-          <name>МатериалыКоличество</name>
-          <id>36</id>
+          <name>РасходныеМатериалыМатериал</name>
+          <id>153</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.Материалы.Количество</segments>
+            <segments>Объект.РасходныеМатериалы.Материал</segments>
           </dataPath>
-          <handlers>
-            <event>OnChange</event>
-            <name>МатериалыКоличествоПриИзменении</name>
-          </handlers>
           <extendedTooltip>
-            <name>МатериалыКоличествоРасширеннаяПодсказка</name>
-            <id>38</id>
+            <name>РасходныеМатериалыМатериалРасширеннаяПодсказка</name>
+            <id>155</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -295,8 +245,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>МатериалыКоличествоКонтекстноеМеню</name>
-            <id>37</id>
+            <name>РасходныеМатериалыМатериалКонтекстноеМеню</name>
+            <id>154</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -305,7 +255,57 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>InputField</type>
-          <editMode>EnterOnInput</editMode>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>РасходныеМатериалыКоличество</name>
+          <id>156</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.РасходныеМатериалы.Количество</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>РасходныеМатериалыКоличествоРасширеннаяПодсказка</name>
+            <id>158</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>РасходныеМатериалыКоличествоКонтекстноеМеню</name>
+            <id>157</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
@@ -319,8 +319,8 @@
           </extInfo>
         </items>
         <autoCommandBar>
-          <name>МатериалыКоманднаяПанель</name>
-          <id>19</id>
+          <name>РасходныеМатериалыКоманднаяПанель</name>
+          <id>138</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -335,11 +335,11 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>МатериалыСтрокаПоиска</name>
-          <id>21</id>
+          <name>РасходныеМатериалыСтрокаПоиска</name>
+          <id>141</id>
           <extendedTooltip>
-            <name>МатериалыСтрокаПоискаРасширеннаяПодсказка</name>
-            <id>23</id>
+            <name>РасходныеМатериалыСтрокаПоискаРасширеннаяПодсказка</name>
+            <id>143</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -353,8 +353,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>МатериалыСтрокаПоискаКонтекстноеМеню</name>
-            <id>22</id>
+            <name>РасходныеМатериалыСтрокаПоискаКонтекстноеМеню</name>
+            <id>142</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -362,7 +362,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <source>МатериалыСтрокаПоиска</source>
+          <source>РасходныеМатериалыСтрокаПоиска</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -373,11 +373,11 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>МатериалыСостояниеПросмотра</name>
-          <id>24</id>
+          <name>РасходныеМатериалыСостояниеПросмотра</name>
+          <id>147</id>
           <extendedTooltip>
-            <name>МатериалыСостояниеПросмотраРасширеннаяПодсказка</name>
-            <id>26</id>
+            <name>РасходныеМатериалыСостояниеПросмотраРасширеннаяПодсказка</name>
+            <id>149</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -391,8 +391,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>МатериалыСостояниеПросмотраКонтекстноеМеню</name>
-            <id>25</id>
+            <name>РасходныеМатериалыСостояниеПросмотраКонтекстноеМеню</name>
+            <id>148</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -401,7 +401,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
-          <source>МатериалыСостояниеПросмотра</source>
+          <source>РасходныеМатериалыСостояниеПросмотра</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -412,11 +412,11 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <name>МатериалыУправлениеПоиском</name>
-          <id>27</id>
+          <name>РасходныеМатериалыУправлениеПоиском</name>
+          <id>144</id>
           <extendedTooltip>
-            <name>МатериалыУправлениеПоискомРасширеннаяПодсказка</name>
-            <id>29</id>
+            <name>РасходныеМатериалыУправлениеПоискомРасширеннаяПодсказка</name>
+            <id>146</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -430,8 +430,8 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>МатериалыУправлениеПоискомКонтекстноеМеню</name>
-            <id>28</id>
+            <name>РасходныеМатериалыУправлениеПоискомКонтекстноеМеню</name>
+            <id>145</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -440,14 +440,14 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
-          <source>МатериалыУправлениеПоиском</source>
+          <source>РасходныеМатериалыУправлениеПоиском</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
         </searchControlAddition>
         <extendedTooltip>
-          <name>МатериалыРасширеннаяПодсказка</name>
-          <id>20</id>
+          <name>РасходныеМатериалыРасширеннаяПодсказка</name>
+          <id>140</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -461,8 +461,8 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>МатериалыКонтекстноеМеню</name>
-          <id>18</id>
+          <name>РасходныеМатериалыКонтекстноеМеню</name>
+          <id>139</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -478,19 +478,15 @@
         <selectionMode>MultiRow</selectionMode>
         <header>true</header>
         <headerHeight>1</headerHeight>
-        <footer>true</footer>
         <footerHeight>1</footerHeight>
         <horizontalScrollBar>AutoUse</horizontalScrollBar>
         <verticalScrollBar>AutoUse</verticalScrollBar>
         <horizontalLines>true</horizontalLines>
         <verticalLines>true</verticalLines>
-        <autoInsertNewRow>true</autoInsertNewRow>
         <searchOnInput>Auto</searchOnInput>
         <initialListView>Auto</initialListView>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
-        <enableStartDrag>true</enableStartDrag>
-        <enableDrag>true</enableDrag>
         <fileDragMode>AsFileRef</fileDragMode>
         <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
@@ -501,10 +497,10 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>Список материалов</value>
+        <value>Список расходников</value>
       </title>
       <extendedTooltip>
-        <name>СписокМатериаловРасширеннаяПодсказка</name>
+        <name>СписокРасходниковРасширеннаяПодсказка</name>
         <id>16</id>
         <visible>true</visible>
         <enabled>true</enabled>

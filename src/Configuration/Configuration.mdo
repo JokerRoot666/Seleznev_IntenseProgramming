@@ -43,6 +43,7 @@
   <subsystems>Subsystem.УглубленныйБлок2</subsystems>
   <roles>Role.Администрирование</roles>
   <commonModules>CommonModule.РаботаСКонстантамиВызовСервера</commonModules>
+  <commonModules>CommonModule.РаботаСФайламиКлиент</commonModules>
   <definedTypes>DefinedType.ДенежныеСредства</definedTypes>
   <commandGroups>CommandGroup.ТорговыеОперации</commandGroups>
   <commandGroups>CommandGroup.ПроизводственныеОперации</commandGroups>
@@ -65,10 +66,16 @@
   <documents>Document.РасходнаяНакладная</documents>
   <enums>Enum.ВидНоменклатуры</enums>
   <enums>Enum.ПроисхождениеНоменклатуры</enums>
+  <reports>Report.ОстаткиНоменклатуры</reports>
   <reports>Report.ОтчетПоПродажам</reports>
   <dataProcessors>DataProcessor.Домашки</dataProcessors>
+  <dataProcessors>DataProcessor.ЗаполнениеПроизводственногоКалендаря</dataProcessors>
+  <informationRegisters>InformationRegister.ПроизводственныйКалендарь</informationRegisters>
+  <informationRegisters>InformationRegister.СтавкиСотрудников</informationRegisters>
+  <informationRegisters>InformationRegister.Файлы</informationRegisters>
   <informationRegisters>InformationRegister.ХарактеристикиНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.ОстаткиНоменклатуры</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВидыХарактеристик</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

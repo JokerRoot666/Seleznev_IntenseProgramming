@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4140759-c521-491f-b8f4-1966f021473e">
+  <producedTypes>
+    <objectType typeId="3386541f-6951-4c58-b00b-32cc35dab2b3" valueTypeId="1bd82ce8-6e7c-4bf1-a768-a340b51019a9"/>
+    <managerType typeId="73f568f9-b368-4c82-8aeb-d2315a032140" valueTypeId="f8e60c2f-8d85-49e5-9b56-bea12050e050"/>
+  </producedTypes>
+  <name>ЗаполнениеПроизводственногоКалендаря</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение производственного календаря</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаполнениеПроизводственногоКалендаря.Form.Форма</defaultForm>
+  <attributes uuid="e3505128-e5a0-4fec-b41d-0413c76420c3">
+    <name>НормаЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4c780b7b-e68a-4bf2-9669-dedf498b1b2f">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d4da9cb9-7180-42c3-8f44-fc712e520669">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="4d5c6350-d18c-4c58-b600-5cffffbf2e9e">
+    <producedTypes>
+      <objectType typeId="a883cf75-20eb-40e6-9560-21e288aa8b2e" valueTypeId="81dbf85b-7665-46a8-bfc6-de837f50a484"/>
+      <rowType typeId="27e90f1c-6c2d-435f-891f-92f05d3b496c" valueTypeId="6fb2c7d3-f64d-47ee-9f34-b0e1626b8175"/>
+    </producedTypes>
+    <name>СписокДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список дней</value>
+    </synonym>
+    <attributes uuid="acaf054c-a616-496b-b994-920f25265061">
+      <name>Дата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6201f914-eff0-4a5d-84f6-c2164814866a">
+      <name>Рабочий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Рабочий</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8602a03c-be8c-45d3-9aef-0c0f51d9152f">
+      <name>КоличествоЧасов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество часов</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:StringValue">
+        <value>0</value>
+      </minValue>
+      <maxValue xsi:type="core:StringValue">
+        <value>24</value>
+      </maxValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="426754b9-8206-420d-9144-9c73e89a9676">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

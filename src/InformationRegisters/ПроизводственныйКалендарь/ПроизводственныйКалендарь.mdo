@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0d2801b-ca19-42c4-bae8-4b5d84f5c358">
+  <producedTypes>
+    <selectionType typeId="64f70158-f7bd-4d33-af55-f378cdd5ed25" valueTypeId="56fdee31-f5d2-4808-84eb-a968227db4f8"/>
+    <listType typeId="096b0df1-bf61-4f3c-83c6-5c49a7d35e41" valueTypeId="91277d20-c37a-49bd-ad07-2aeaae7721c8"/>
+    <managerType typeId="74fe7e5f-0377-4ad0-9456-852e652a5ecf" valueTypeId="c32282f6-1580-4f86-8699-3175e80110ea"/>
+    <recordSetType typeId="69ef92d7-eb02-4c62-8937-3e96a9642d29" valueTypeId="3e04d73b-f4e9-4ac5-aa6e-47e45d14d5a2"/>
+    <recordKeyType typeId="b4e77a95-4815-41b4-84ca-3b734f73db19" valueTypeId="374312c8-8ac7-42a1-999c-eb4af580c189"/>
+    <recordType typeId="19531cd3-720e-4095-ae15-a40e7c7aa1cf" valueTypeId="0286aab6-2381-4b18-a0cc-641be3238963"/>
+    <recordManagerType typeId="ce1df8a9-a612-48ab-b341-1c70352bb923" valueTypeId="92a84765-e129-41c7-bdb8-8114d2fa5613"/>
+  </producedTypes>
+  <name>ПроизводственныйКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производственный календарь</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>День</value>
+  </recordPresentation>
+  <resources uuid="937467d6-8ad9-4cae-9fa3-f58dd7e5483a">
+    <name>КоличествоЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество часов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>24</value>
+    </maxValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="65340212-e26b-448d-a8f1-9e177e7c188e">
+    <name>День</name>
+    <synonym>
+      <key>ru</key>
+      <value>День</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

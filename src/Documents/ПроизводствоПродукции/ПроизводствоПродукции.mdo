@@ -33,6 +33,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПроизводствоПродукции.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ОстаткиНоменклатуры</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="0bac0192-f35c-4f21-a8a9-41c14928ac97">
@@ -149,6 +150,56 @@
         <types>Number</types>
         <numberQualifiers>
           <precision>9</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="ce7a1266-639b-4a90-b2d1-83bac04122cf">
+    <producedTypes>
+      <objectType typeId="13867bad-b0fa-4297-908c-08e824a3bb9f" valueTypeId="b14c5765-7ad5-44af-8ab8-fafffdca9d72"/>
+      <rowType typeId="924d3eb0-ef8d-4168-8fc0-a3eb2e522aed" valueTypeId="70cd44a9-aada-4338-81a4-6ee5ac581d31"/>
+    </producedTypes>
+    <name>РасходныеМатериалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходные материалы</value>
+    </synonym>
+    <attributes uuid="c7594292-f727-4dbc-ae4c-872f7c8aaa45">
+      <name>Материал</name>
+      <synonym>
+        <key>ru</key>
+        <value>Материал</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ВидНоменклатуры</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВидНоменклатуры.EnumValue.РасходныйМатериал</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="da0975c8-6104-48e6-bfa3-ab4ca0568f94">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
           <scale>3</scale>
           <nonNegative>true</nonNegative>
         </numberQualifiers>

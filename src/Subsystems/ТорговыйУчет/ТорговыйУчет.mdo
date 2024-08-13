@@ -18,4 +18,6 @@
   <content>InformationRegister.ХарактеристикиНоменклатуры</content>
   <content>ChartOfCharacteristicTypes.ВидыХарактеристик</content>
   <content>Catalog.ВариантыЗначенияХарактеристик</content>
+  <content>AccumulationRegister.ОстаткиНоменклатуры</content>
+  <content>Report.ОстаткиНоменклатуры</content>
 </mdclass:Subsystem>

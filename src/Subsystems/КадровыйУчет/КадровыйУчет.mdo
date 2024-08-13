@@ -8,4 +8,7 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Сотрудники</content>
+  <content>InformationRegister.СтавкиСотрудников</content>
+  <content>InformationRegister.ПроизводственныйКалендарь</content>
+  <content>DataProcessor.ЗаполнениеПроизводственногоКалендаря</content>
 </mdclass:Subsystem>

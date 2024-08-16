@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f0d0532-9934-4bbc-8d8b-af3a7c4618e0">
+  <producedTypes>
+    <selectionType typeId="b2efd227-dbe8-446d-9025-afdd988e8ef0" valueTypeId="8d343fc7-bd81-4f6c-8642-e4a41f56d547"/>
+    <listType typeId="eef5c80d-43f7-4038-8294-3aa28fab6286" valueTypeId="629ec1df-2f76-4d27-bd4a-793838f6fd7e"/>
+    <managerType typeId="53b57931-72e5-4ac9-909a-d73021e0b2e5" valueTypeId="1513aae2-cacf-4270-8353-4f150a50b8e8"/>
+    <recordSetType typeId="6ecd739f-18cd-4bfa-a55e-2e1101e47c91" valueTypeId="e21d5c82-a7ab-4d75-bce5-d2eb8ca2c0e1"/>
+    <recordKeyType typeId="77a9e848-20e5-4b43-94be-3a1a37049199" valueTypeId="d2b8d508-69f7-457a-b0b3-f06e031277be"/>
+    <recordType typeId="33b862a3-9248-40c5-84ca-d85c9c092957" valueTypeId="8bffb69a-4e1a-482e-9157-ee1d55300554"/>
+    <recalcsType typeId="ba4f0bab-ca31-4fa6-b90d-74dcd8885b70" valueTypeId="0686b310-fae8-4d91-a217-30cd1ba6d444"/>
+  </producedTypes>
+  <name>Зарплата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарплата</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <actionPeriod>true</actionPeriod>
+  <schedule>InformationRegister.ПроизводственныйКалендарь</schedule>
+  <scheduleValue>InformationRegister.ПроизводственныйКалендарь.Resource.КоличествоЧасов</scheduleValue>
+  <scheduleDate>InformationRegister.ПроизводственныйКалендарь.Dimension.День</scheduleDate>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВидыРасчетов</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1a5955bf-6b38-4e3e-a936-26dd3da66151">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="164201a2-23c7-48da-9798-f2f8cb7a01bd">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="a0dc377e-94f1-4bd4-a93a-00655dcd98c3">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>

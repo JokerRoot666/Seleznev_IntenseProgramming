@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78fde440-468e-4af6-aa79-60e8ee9f7844">
+  <producedTypes>
+    <objectType typeId="5454094a-8bfe-413e-9f64-6e41e4f33919" valueTypeId="2f08385c-e8af-4f95-9748-45098596e7fa"/>
+    <refType typeId="1197fb35-ac52-46b9-acf3-1a9d1bc8594f" valueTypeId="cccabdad-680b-4cf5-b25c-10ae9511447b"/>
+    <selectionType typeId="4fbd34b0-8ad8-467d-85ca-39b27abf3b3c" valueTypeId="b7e0f74d-03d4-46b7-8efd-6bf93184cb27"/>
+    <listType typeId="d04fac48-17e9-4758-9a55-90b47429000f" valueTypeId="a89dc301-bef9-4259-b78e-730412e537b6"/>
+    <managerType typeId="708d02ed-731b-41b7-a62b-430b2f089d3a" valueTypeId="aa48590f-cffb-42c1-8167-112101d8ea1d"/>
+  </producedTypes>
+  <name>СчетНаОплату</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счет на оплату</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СчетНаОплату.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.РасходнаяНакладная</basedOn>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Счет на оплату</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Счета на оплату</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СчетНаОплату.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="336333e2-4ab2-446a-b181-5cf2f02c630e">
+    <name>НаменованиеПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наменование поставщика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef9f9000-af35-4af0-b2ae-37f12ba1c5c4">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f66eae85-4e64-4a79-af86-146b059342de">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РасходнаяНакладная</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3d5c2fe8-b554-4b22-bdc1-1da3f648d61b">
+    <name>ИтоговаяСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Итоговая сумма</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежныеСредства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="8156a8f7-a927-439e-bd52-1d14ef8c4968">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

@@ -36,6 +36,7 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.БухгалтерскийУчет</subsystems>
   <subsystems>Subsystem.КадровыйУчет</subsystems>
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.ПроизводственныйУчет</subsystems>
@@ -45,12 +46,14 @@
   <commonModules>CommonModule.РаботаСКонстантамиВызовСервера</commonModules>
   <commonModules>CommonModule.РаботаСФайламиКлиент</commonModules>
   <definedTypes>DefinedType.ДенежныеСредства</definedTypes>
-  <commandGroups>CommandGroup.ТорговыеОперации</commandGroups>
-  <commandGroups>CommandGroup.ПроизводственныеОперации</commandGroups>
-  <commandGroups>CommandGroup.УчетныеДанные</commandGroups>
-  <commandGroups>CommandGroup.ТорговыйУчет</commandGroups>
+  <commandGroups>CommandGroup.ЗарплатныеОперации</commandGroups>
   <commandGroups>CommandGroup.ПериодическиеДанные</commandGroups>
+  <commandGroups>CommandGroup.ПроизводственныеОперации</commandGroups>
+  <commandGroups>CommandGroup.ТорговыеОперации</commandGroups>
+  <commandGroups>CommandGroup.ТорговыйУчет</commandGroups>
+  <commandGroups>CommandGroup.УчетныеДанные</commandGroups>
   <commandGroups>CommandGroup.Характеристики</commandGroups>
+  <commandGroups>CommandGroup.ФинансовыеОперации</commandGroups>
   <constants>Constant.ГенеральныйДиректор</constants>
   <constants>Constant.ИНН_Организации</constants>
   <constants>Constant.НазваниеОрганизации</constants>
@@ -61,11 +64,17 @@
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <documents>Document.ЗаказПоставщику</documents>
+  <documents>Document.ПКО</documents>
   <documents>Document.ПриходнаяНакладная</documents>
   <documents>Document.ПроизводствоПродукции</documents>
   <documents>Document.РасходнаяНакладная</documents>
+  <documents>Document.РасчетнаяВедомость</documents>
+  <documents>Document.СчетНаОплату</documents>
+  <documents>Document.ФиксацияПрогула</documents>
   <enums>Enum.ВидНоменклатуры</enums>
   <enums>Enum.ПроисхождениеНоменклатуры</enums>
+  <reports>Report.Зарплата</reports>
+  <reports>Report.ОСВ</reports>
   <reports>Report.ОстаткиНоменклатуры</reports>
   <reports>Report.ОтчетПоПродажам</reports>
   <dataProcessors>DataProcessor.Домашки</dataProcessors>
@@ -77,5 +86,10 @@
   <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиНоменклатуры</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВидыСубконто</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВидыХарактеристик</chartsOfCharacteristicTypes>
+  <chartsOfAccounts>ChartOfAccounts.ПланыСчетовБухгалтерии</chartsOfAccounts>
+  <accountingRegisters>AccountingRegister.БухгалтерскиеПроводки</accountingRegisters>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВидыРасчетов</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.Зарплата</calculationRegisters>
 </mdclass:Configuration>

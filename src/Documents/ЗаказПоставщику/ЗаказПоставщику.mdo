@@ -32,6 +32,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ЗаказПоставщику.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЗаказПоставщику.Form.ФормаСписка</defaultListForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="217ed88d-6e15-4387-b177-6d093c035f54">
@@ -84,6 +85,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6702c999-2bbb-4baa-b0ca-54371ef1483e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

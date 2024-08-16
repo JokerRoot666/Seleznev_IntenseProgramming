@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsPlacement>
+    <placementFragments>
+      <group>CommandGroup.ФинансовыеОперации</group>
+      <commands>Document.СчетНаОплату.StandardCommand.OpenList</commands>
+      <commands>Document.ПКО.StandardCommand.OpenList</commands>
+    </placementFragments>
+    <placementFragments>
+      <group>CommandGroup.ТорговыйУчет</group>
+      <commands>ChartOfAccounts.ПланыСчетовБухгалтерии.StandardCommand.OpenList</commands>
+      <commands>ChartOfCharacteristicTypes.ВидыСубконто.StandardCommand.OpenList</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>CommandGroup.ФинансовыеОперации</group>
+      <commands>Document.СчетНаОплату.StandardCommand.OpenList</commands>
+      <commands>Document.ПКО.StandardCommand.OpenList</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>CommandGroup.ТорговыйУчет</group>
+      <commands>ChartOfAccounts.ПланыСчетовБухгалтерии.StandardCommand.OpenList</commands>
+      <commands>ChartOfCharacteristicTypes.ВидыСубконто.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

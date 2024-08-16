@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51224bb3-59fd-4687-a335-9c7677fb8c41">
+  <producedTypes>
+    <objectType typeId="407db93e-7afa-481f-841a-5e7c0af98988" valueTypeId="12f3a0e4-ac5b-401d-90aa-3e6c751aedc0"/>
+    <refType typeId="f4993abf-0069-47e0-875e-7748202cdc69" valueTypeId="c222582d-46f1-4081-8cc4-d63392e77ef6"/>
+    <selectionType typeId="bd219f82-5ebe-4424-83d4-525031974ae0" valueTypeId="d4a7307c-6fa9-4950-b813-5f84a53db700"/>
+    <listType typeId="c7a0dba5-1ed2-4422-8c66-cafad0884654" valueTypeId="e70617ec-88cc-4177-9985-93f84408aa3a"/>
+    <managerType typeId="23b14c4f-0f81-40ad-9e3a-229b008cbef9" valueTypeId="d023493a-91d8-41d5-8151-7c2683eaf6b9"/>
+    <containerType typeId="63edb361-0316-4fce-8010-f18863841b99" valueTypeId="b340607f-3bf8-4108-a098-7642ded666ed"/>
+  </producedTypes>
+  <name>ВидыСубконто</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды субконто</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ВидыСубконто.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ВидыСубконто.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>CatalogRef.Сотрудники</types>
+    <types>CatalogRef.Договоры</types>
+    <types>CatalogRef.Контрагенты</types>
+    <types>CatalogRef.Номенклатура</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="70f21061-97a3-44da-992f-f72e2903fabe">
+      <name>Покупатель</name>
+      <description>Покупатель</description>
+      <code>000000001</code>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

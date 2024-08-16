@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59c9f18a-b965-4875-9d87-5a10e4b79c70">
+  <producedTypes>
+    <objectType typeId="3136b867-a36c-49ce-940c-c874eebd4139" valueTypeId="d3214a9a-127e-4369-b057-7844024829a9"/>
+    <refType typeId="cf5d114e-613a-4e7a-883d-596057ed4133" valueTypeId="737ddef8-35a0-450a-9c78-5bb6e7d9d879"/>
+    <selectionType typeId="27658c06-04b8-454f-93e0-18a85e2a115a" valueTypeId="feb3da66-19d8-4b15-bc28-063d5637d301"/>
+    <listType typeId="2eafb7f0-19f4-40ab-8a1a-1c5b9b7392a2" valueTypeId="8d1087bc-d653-46a2-b857-2707443cc8bc"/>
+    <managerType typeId="b8d9e417-c61f-4f11-9095-b07bbd91899a" valueTypeId="af1fb64f-b1c7-4dba-bd09-e2249f7bef6c"/>
+  </producedTypes>
+  <name>ФиксацияПрогула</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фиксация прогула</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ФиксацияПрогула.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Month</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>CalculationRegister.Зарплата</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="2c800819-546e-4bee-8d46-000198e5cb9a">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

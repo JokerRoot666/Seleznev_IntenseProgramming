@@ -171,6 +171,7 @@
 					</dcsset:selection>
 				</dcsset:item>
 			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemTable"/>
 		</dcsset:settings>
 	</settingsVariant>
 	<settingsVariant>

@@ -33,6 +33,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПроизводствоПродукции.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ПроизводствоПродукции.Form.ФормаСписка</defaultListForm>
   <registerRecords>AccumulationRegister.ОстаткиНоменклатуры</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
@@ -56,6 +57,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b57c23b2-df8a-4f5a-8da1-104902b3115d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

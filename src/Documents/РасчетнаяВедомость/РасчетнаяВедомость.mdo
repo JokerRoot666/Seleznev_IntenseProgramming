@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e51ffba3-277c-474a-99f2-568eaef23d53">
+  <producedTypes>
+    <objectType typeId="c07451ae-9a2a-4b57-ab9b-0161636a8ffe" valueTypeId="a3304e16-01b6-4f44-8f4b-5f1838e2dd43"/>
+    <refType typeId="1ce93909-0210-4af3-a716-402e450d0c69" valueTypeId="b3d62012-6db1-4710-90e5-44bb89bf8b88"/>
+    <selectionType typeId="15dbded6-0f99-464a-aecc-571067906810" valueTypeId="e7345462-0763-4176-be58-131e27c120a7"/>
+    <listType typeId="d3728893-ffa9-40ec-b696-204f2f16d16e" valueTypeId="57cf9a05-be33-450b-ae8c-1ee4c122bc49"/>
+    <managerType typeId="5c886bb0-6d4d-47e4-81b9-3e022ec613ad" valueTypeId="12c4907f-7b8f-464e-a619-49c7c5881130"/>
+  </producedTypes>
+  <name>РасчетнаяВедомость</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчетная ведомость</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.РасчетнаяВедомость.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Расчетная ведомость</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Расчетные ведомости</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>CalculationRegister.Зарплата</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="b2ddb157-7791-47d9-9a2e-c841770226a3">
+    <producedTypes>
+      <objectType typeId="60a4b542-a062-423a-be62-cceeea335af1" valueTypeId="1b6c2091-829d-447d-b9da-190971b95c9e"/>
+      <rowType typeId="332a445d-c457-4205-983a-3ebb99a0185a" valueTypeId="c667dc71-bd2a-4d7e-89e7-7b513687133c"/>
+    </producedTypes>
+    <name>СписокСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список сотрудников</value>
+    </synonym>
+    <attributes uuid="0c4b8d33-5631-41e6-adb8-1af300fdd5ca">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c9850bea-583e-45d2-a1fc-8f0586efc2ed">
+      <name>Ставка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ДенежныеСредства</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

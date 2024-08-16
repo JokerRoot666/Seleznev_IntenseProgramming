@@ -11,4 +11,9 @@
   <content>InformationRegister.СтавкиСотрудников</content>
   <content>InformationRegister.ПроизводственныйКалендарь</content>
   <content>DataProcessor.ЗаполнениеПроизводственногоКалендаря</content>
+  <content>CalculationRegister.Зарплата</content>
+  <content>ChartOfCalculationTypes.ВидыРасчетов</content>
+  <content>Document.ФиксацияПрогула</content>
+  <content>Document.РасчетнаяВедомость</content>
+  <content>Report.Зарплата</content>
 </mdclass:Subsystem>

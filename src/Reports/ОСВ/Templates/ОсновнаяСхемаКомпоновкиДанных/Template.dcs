@@ -165,13 +165,6 @@
 					<dcsset:placement>Auto</dcsset:placement>
 				</dcsset:item>
 			</dcsset:selection>
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>[Период	]</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>e2a79863-e734-476e-adb4-b617f5d25a95</dcsset:userSettingID>
-				</dcscor:item>
-			</dcsset:dataParameters>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МакетОформления</dcscor:parameter>

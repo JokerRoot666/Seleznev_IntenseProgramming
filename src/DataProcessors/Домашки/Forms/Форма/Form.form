@@ -41,17 +41,21 @@
     <items xsi:type="form:FormGroup">
       <name>ДЗ_1</name>
       <id>5</id>
-      <items xsi:type="form:Button">
-        <name>Команда1</name>
-        <id>27</id>
+      <items xsi:type="form:Decoration">
+        <name>Задание1</name>
+        <id>50</id>
+        <title>
+          <key>ru</key>
+          <value>Задание 1</value>
+        </title>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>Команда1РасширеннаяПодсказка</name>
-          <id>28</id>
+          <name>Задание1РасширеннаяПодсказка</name>
+          <id>52</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -64,13 +68,22 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>UsualButton</type>
-        <commandName>Form.Command.ПоказатьРезультат</commandName>
-        <representation>Auto</representation>
+        <contextMenu>
+          <name>Задание1КонтекстноеМеню</name>
+          <id>51</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -103,19 +116,23 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>ДЗ2</name>
+      <name>ДЗ_2</name>
       <id>11</id>
-      <items xsi:type="form:Button">
-        <name>Команда2</name>
-        <id>31</id>
+      <items xsi:type="form:Decoration">
+        <name>Задание2</name>
+        <id>47</id>
+        <title>
+          <key>ru</key>
+          <value>Задание 2</value>
+        </title>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>Команда2РасширеннаяПодсказка</name>
-          <id>32</id>
+          <name>Задание2РасширеннаяПодсказка</name>
+          <id>49</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -128,13 +145,22 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>UsualButton</type>
-        <commandName>Form.Command.Команда2</commandName>
-        <representation>Auto</representation>
+        <contextMenu>
+          <name>Задание2КонтекстноеМеню</name>
+          <id>48</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -146,8 +172,85 @@
         <value>ДЗ 2</value>
       </title>
       <extendedTooltip>
-        <name>ДЗ2РасширеннаяПодсказка</name>
+        <name>ДЗ_2РасширеннаяПодсказка</name>
         <id>12</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ДЗ_3</name>
+      <id>37</id>
+      <items xsi:type="form:Decoration">
+        <name>Задание3</name>
+        <id>44</id>
+        <title>
+          <key>ru</key>
+          <value>Задание 3</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>Задание3РасширеннаяПодсказка</name>
+          <id>46</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>Задание3КонтекстноеМеню</name>
+          <id>45</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>ДЗ 3</value>
+      </title>
+      <extendedTooltip>
+        <name>ДЗ_3РасширеннаяПодсказка</name>
+        <id>38</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>

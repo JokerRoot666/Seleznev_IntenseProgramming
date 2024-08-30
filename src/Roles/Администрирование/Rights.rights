@@ -13,22 +13,6 @@
 	<object>
 		<name>Constant.ГенеральныйДиректор</name>
 		<right>
-			<name>Read</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>false</value>
 		</right>
@@ -60,22 +44,6 @@
 	<object>
 		<name>Constant.НазваниеОрганизации</name>
 		<right>
-			<name>Read</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>ReadDataHistory</name>
 			<value>false</value>
 		</right>
@@ -106,22 +74,6 @@
 	</object>
 	<object>
 		<name>Constant.ИНН_Организации</name>
-		<right>
-			<name>Read</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>ReadDataHistory</name>
 			<value>false</value>

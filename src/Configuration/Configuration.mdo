@@ -43,8 +43,10 @@
   <subsystems>Subsystem.ТорговыйУчет</subsystems>
   <subsystems>Subsystem.УглубленныйБлок2</subsystems>
   <roles>Role.Администрирование</roles>
+  <commonModules>CommonModule.ВзаимодействиеСПользоватемКлиент</commonModules>
   <commonModules>CommonModule.РаботаСКонстантамиВызовСервера</commonModules>
   <commonModules>CommonModule.РаботаСФайламиКлиент</commonModules>
+  <commonModules>CommonModule.РаботаСЦенамиКлиент</commonModules>
   <definedTypes>DefinedType.ДенежныеСредства</definedTypes>
   <commandGroups>CommandGroup.ЗарплатныеОперации</commandGroups>
   <commandGroups>CommandGroup.ПериодическиеДанные</commandGroups>

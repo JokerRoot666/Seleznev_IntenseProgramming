@@ -24,25 +24,46 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Поле1</v8:content>
+					<v8:content>Сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЧасовФактическийПериодДействия</dataPath>
+			<field>КоличествоЧасовФактическийПериодДействия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество часов</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	Зарплата.Сотрудник,
-	Зарплата.Ставка,
-	Зарплата.ПериодДействия,
-	Зарплата.Сумма * ЗарплатаДанныеГрафика.КоличествоЧасовПериодДействия
-	
-{ГДЕ
-	Зарплата.ПериодДействия МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания}
+	ЗарплатаДанныеГрафика.Ставка,
+	ЗарплатаДанныеГрафика.Сотрудник,
+	ЗарплатаДанныеГрафика.ПериодДействия,
+	ЗарплатаДанныеГрафика.Сумма * ЗарплатаДанныеГрафика.КоличествоЧасовФактическийПериодДействия,
+	ЗарплатаДанныеГрафика.КоличествоЧасовФактическийПериодДействия
 ИЗ
-	РегистрРасчета.Зарплата КАК Зарплата,
 	РегистрРасчета.Зарплата.ДанныеГрафика КАК ЗарплатаДанныеГрафика
 ГДЕ
-	Зарплата.ВидРасчета = &amp;ВидРасчета</query>
+	ЗарплатаДанныеГрафика.ВидРасчета = &amp;ВидРасчета
+{ГДЕ
+	ЗарплатаДанныеГрафика.ПериодДействия МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания}</query>
 	</dataSet>
+	<totalField>
+		<dataPath>КоличествоЧасовФактическийПериодДействия</dataPath>
+		<expression>Сумма(КоличествоЧасовФактическийПериодДействия)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Поле1</dataPath>
+		<expression>Сумма(Поле1)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Ставка</dataPath>
+		<expression>Сумма(Ставка)</expression>
+	</totalField>
 	<parameter>
 		<name>Период</name>
 		<title xsi:type="v8:LocalStringType">
@@ -65,12 +86,6 @@
 				<v8:content>Дата окончания</v8:content>
 			</v8:item>
 		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
 		<useRestriction>true</useRestriction>
 	</parameter>
 	<parameter>
@@ -84,6 +99,7 @@
 		<valueType>
 			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCalculationTypesRef.ВидыРасчетов</v8:Type>
 		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">ПланВидовРасчета.ВидыРасчетов.Ставка</value>
 		<useRestriction>true</useRestriction>
 	</parameter>
 	<parameter>
@@ -94,12 +110,6 @@
 				<v8:content>Дата начала</v8:content>
 			</v8:item>
 		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
 		<useRestriction>true</useRestriction>
 	</parameter>
 	<settingsVariant>
@@ -114,13 +124,13 @@
 					<dcsset:field>Ставка</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Сумма</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ПериодДействия</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>КоличествоЧасовПериодДействия</dcsset:field>
+					<dcsset:field>КоличествоЧасовФактическийПериодДействия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Поле1</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
@@ -129,6 +139,35 @@
 					<dcsset:userSettingID>42369a37-67aa-4436-9ee3-6642681d47ba</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПериодДействия</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПериодДействия</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+							</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='ММММ гггг'</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МакетОформления</dcscor:parameter>
@@ -140,17 +179,46 @@
 					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">SeparatelyAndInTotalsOnly</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
 					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
 			</dcsset:outputParameters>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПериодДействия</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сотрудник</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>

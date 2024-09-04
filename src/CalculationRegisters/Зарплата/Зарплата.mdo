@@ -22,14 +22,18 @@
   <scheduleDate>InformationRegister.ПроизводственныйКалендарь.Dimension.День</scheduleDate>
   <chartOfCalculationTypes>ChartOfCalculationTypes.ВидыРасчетов</chartOfCalculationTypes>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="1a5955bf-6b38-4e3e-a936-26dd3da66151">
+  <resources uuid="91d8604d-1d80-425c-9120-f77c8eaf58b2">
     <name>Сумма</name>
     <synonym>
       <key>ru</key>
       <value>Сумма</value>
     </synonym>
     <type>
-      <types>DefinedType.ДенежныеСредства</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
